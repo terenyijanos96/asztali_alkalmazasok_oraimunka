@@ -2,18 +2,24 @@ package csomag;
 
 public class Main {
     public static void main(String[] args) {
+        kiir("az első 10 szám összege:" + elso10SzamOsszege() + "\n");
+        kiir("a + b = " + osszead(2, 3) + "\n");
     }
 
-    private static void elso10SzamOsszege() {
+    private static int elso10SzamOsszege() {
         int osszeg = 0;
-        for (int i = 0; i <10; i++){
-            osszeg+=i;
+        for (int i = 0; i < 10; i++) {
+            osszeg += i;
         }
-        System.out.println("az első 10 szám összege: "+ osszeg);
+        return osszeg;
     }
 
-    private static void osszead(int a, int b) {
-        System.out.printf("%d + %d = %d\n", a, b, a+b);
+    private static int osszead(int a, int b) {
+        return a + b;
+    }
+
+    private static void kiir(String szoveg) {
+        System.out.print(szoveg);
     }
 
 }
