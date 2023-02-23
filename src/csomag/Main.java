@@ -15,7 +15,18 @@ public class Main {
 
         int vegosszeg = osszead(osszeg_1, osszeg_2);
 
-        kiir("Négy szám összege: 3 + 4 + 5 + 6 = " + vegosszeg);
+        kiir("Négy szám összege: 3 + 4 + 5 + 6 = " + vegosszeg + "\n");
+
+        int szam_1 = 3;
+        int szam_2 = 4;
+        int szam_3 = 2;
+
+        int osszeg = osszead(osszead(szam_1,szam_2), szam_3);
+        double gyok = Math.sqrt(osszeg);
+
+        kiir("3+4+2 gyöke: " + gyok + "\n");
+
+
     }
 
     private static int elso10SzamOsszege() {
