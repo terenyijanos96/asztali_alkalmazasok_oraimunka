@@ -4,6 +4,18 @@ public class Main {
     public static void main(String[] args) {
         kiir("az első 10 szám összege:" + elso10SzamOsszege() + "\n");
         kiir("a + b = " + osszead(2, 3) + "\n");
+
+        int elso_szam = 3;
+        int masodik_szam = 4;
+        int harmadik_szam = 5;
+        int negyedik_szam = 6;
+
+        int osszeg_1 = osszead(elso_szam, masodik_szam);
+        int osszeg_2 = osszead(harmadik_szam, negyedik_szam);
+
+        int vegosszeg = osszead(osszeg_1, osszeg_2);
+
+        kiir("Négy szám összege: 3 + 4 + 5 + 6 = " + vegosszeg);
     }
 
     private static int elso10SzamOsszege() {
